@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+coverage/
+node_modules/
+hast-util-has-property.js
+hast-util-has-property.min.js
