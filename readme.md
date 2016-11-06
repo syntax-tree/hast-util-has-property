@@ -10,60 +10,42 @@ Check whether a [HAST node][hast] is an [element][] with a [property][].
 npm install hast-util-has-property
 ```
 
-**hast-util-has-property** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
 
 Dependencies:
 
 ```javascript
-var hasProperty = require('hast-util-has-property');
-```
+var has = require('hast-util-has-property');
 
-Checks:
+has({type: 'text', value: 'alpha'}, 'bravo'); //=> false
 
-```javascript
-var a = hasProperty({
-    'type': 'text',
-    'value': 'alpha'
-}, 'bravo');
-var b = hasProperty({
-    'type': 'element',
-    'tagName': 'div',
-    'properties': {
-        'id': 'bravo'
-    },
-    'children': []
-}, 'className');
-var c = hasProperty({
-    'type': 'element',
-    'tagName': 'div',
-    'properties': {
-        'id': 'charlie'
-    },
-    'children': []
-}, 'id');
-```
+has({
+  type: 'element',
+  tagName: 'div',
+  properties: {id: 'bravo'},
+  children: []
+}, 'className'); //=> false
 
-Yields:
-
-```txt
-a: false
-b: false
-c: true
+has({
+  type: 'element',
+  tagName: 'div',
+  properties: {id: 'charlie'},
+  children: []
+}, 'id'); // => true
 ```
 
 ## API
 
 ### `hasProperty(node, name)`
 
-**Parameters**:
+Check if `node` has a set `name` property.
+
+###### Parameters
 
 *   `node` ([`Node`][node], optional) — Node to check.
 *   `name` ([`string`][property]) - Property name to check.
 
-**Returns**:
+###### Returns
 
 `boolean` — Whether `node` is an [`Element`][element] with a property
 by `name`.
@@ -83,8 +65,6 @@ by `name`.
 [coverage-page]: https://codecov.io/github/wooorm/hast-util-has-property?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-has-property/releases
 
 [license]: LICENSE
 
