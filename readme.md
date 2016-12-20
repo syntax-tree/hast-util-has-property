@@ -56,13 +56,13 @@ by `name`.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/hast-util-has-property.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-has-property.svg
 
-[build-page]: https://travis-ci.org/wooorm/hast-util-has-property
+[build-page]: https://travis-ci.org/syntax-tree/hast-util-has-property
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/hast-util-has-property.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-has-property.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/hast-util-has-property?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-has-property?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -70,10 +70,10 @@ by `name`.
 
 [author]: http://wooorm.com
 
-[hast]: https://github.com/wooorm/hast
+[hast]: https://github.com/syntax-tree/hast
 
-[node]: https://github.com/wooorm/hast#node
+[node]: https://github.com/syntax-tree/unist#node
 
-[element]: https://github.com/wooorm/hast#element
+[element]: https://github.com/syntax-tree/hast#element
 
-[property]: https://github.com/wooorm/hast#property-names
+[property]: https://github.com/syntax-tree/hast#property-names
