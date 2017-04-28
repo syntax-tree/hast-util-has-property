@@ -12,8 +12,6 @@ npm install hast-util-has-property
 
 ## Usage
 
-Dependencies:
-
 ```javascript
 var has = require('hast-util-has-property');
 
