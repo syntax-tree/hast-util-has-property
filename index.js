@@ -1,9 +1,7 @@
 'use strict';
 
-/* Dependencies. */
 var has = require('has');
 
-/* Expose. */
 module.exports = hasProperty;
 
 /* Check if `node` has a set `name` property. */

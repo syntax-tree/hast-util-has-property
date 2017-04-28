@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
 var hasProperty = require('./index.js');
 
-/* Tests. */
 test('hasProperty', function (t) {
   t.equal(
     hasProperty(null, 'alpha'),
