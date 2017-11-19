@@ -1,6 +1,6 @@
 'use strict';
 
-var has = require('has');
+var own = {}.hasOwnProperty;
 
 module.exports = hasProperty;
 
@@ -14,7 +14,7 @@ function hasProperty(node, name) {
   }
 
   props = node.properties;
-  value = props && has(props, name) && props[name];
+  value = props && own.call(props, name) && props[name];
 
   return value !== null && value !== undefined && value !== false;
 }
