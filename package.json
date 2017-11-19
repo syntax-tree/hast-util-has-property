@@ -9,7 +9,7 @@
     "element",
     "property"
   ],
-  "repository": "https://github.com/syntax-tree/hast-util-has-property",
+  "repository": "syntax-tree/hast-util-has-property",
   "bugs": "https://github.com/syntax-tree/hast-util-has-property/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
