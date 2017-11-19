@@ -48,6 +48,14 @@ Check if `node` has a set `name` property.
 `boolean` — Whether `node` is an [`Element`][element] with a property
 by `name`.
 
+## Contribute
+
+See [`contribute.md` in `syntax-tree/hast`][contribute] for ways to get
+started.
+
+This organisation has a [Code of Conduct][coc].  By interacting with this
+repository, organisation, or community you agree to abide by its terms.
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -75,3 +83,7 @@ by `name`.
 [element]: https://github.com/syntax-tree/hast#element
 
 [property]: https://github.com/syntax-tree/hast#property-names
+
+[contribute]: https://github.com/syntax-tree/hast/blob/master/contributing.md
+
+[coc]: https://github.com/syntax-tree/hast/blob/master/code-of-conduct.md
