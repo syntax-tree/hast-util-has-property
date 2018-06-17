@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var hasProperty = require('./index.js');
+var hasProperty = require('.');
 
 test('hasProperty', function (t) {
   t.equal(
