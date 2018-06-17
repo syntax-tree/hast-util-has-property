@@ -13,23 +13,29 @@ npm install hast-util-has-property
 ## Usage
 
 ```javascript
-var has = require('hast-util-has-property');
+var has = require('hast-util-has-property')
 
-has({type: 'text', value: 'alpha'}, 'bravo'); //=> false
+has({type: 'text', value: 'alpha'}, 'bravo') // => false
 
-has({
-  type: 'element',
-  tagName: 'div',
-  properties: {id: 'bravo'},
-  children: []
-}, 'className'); //=> false
+has(
+  {
+    type: 'element',
+    tagName: 'div',
+    properties: {id: 'bravo'},
+    children: []
+  },
+  'className'
+) // => false
 
-has({
-  type: 'element',
-  tagName: 'div',
-  properties: {id: 'charlie'},
-  children: []
-}, 'id'); // => true
+has(
+  {
+    type: 'element',
+    tagName: 'div',
+    properties: {id: 'charlie'},
+    children: []
+  },
+  'id'
+) // => true
 ```
 
 ## API
