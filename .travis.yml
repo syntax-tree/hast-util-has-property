@@ -4,21 +4,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: tituswormer@gmail.com
-    api_key:
-      secure: D1PEQ9hS5T58p7navev1/JCED+me35QOyMIskej2qMg9xx9LltfHbZw2Idjl4jtssyGjBzLjNKKj3Obb3IkhrHHPgh/KrQtYkeV2Qit0NlD2kzIIA/PHMyShUTm7kcH5DteO5aRw49ZGsqTo+cvLx/s6zG/V/PMphRPqUBbeICmDqa+oDHEhkVvw5wuHNNrjCNpFMI5Y0pfBSUPFJdU8FkE9G3SDDrkQqeZPPXkx1w+vRYd8xoQD1T5rSqFvuROIgi8rEMfoPX/hocShIdnvYVruTLmioWLgqzNVZKfyKwRJXsFYK0IqOiS2xETcyMxHQwEwEoOTUpKjcusTz7AAvx1oNCSTylL4Kj+f/lczEjw160PHkn96jsG1IvPw8uj5XUAh/vjDyuvItlt+ie4skK42OAatMtEYOMq4jhxiE/OX+yp9PRN0zeGC86fQz5WtH6hMFz0npz1iNIE5bYM1fnlb9MIeHqt+IP77HifPE3PLo6PnZJahvnD4COk1u6J2ps9fHqw55cnuZh9hQ4jJAk90HO+rdwVMwUmA+Ap8u7TzFgJ0Io90aBIIZQmZBJ/eIOrq4jwb0ezc0yWH1K1U6ZUY7Ar4cbZj2LP3ZhOnCDC9jm2sgTknRO8YfJpcZm2lmE9kv7S1hW869rkuvas5f6BuTS6nsoWHFVPgNI+Jq34=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: Am2D3NNzZyq9pkSvdDD/F0I76Mu4VyZsIJf0nNFj10LqT+831uwb1PiAl5UP7mc7HfBhn4iMwo2KIo7XSwxsLzCN9s3C8LTldbLK3zAwkVPQfNfSwF48QFg7op3sitme0KGDmJFLGMoXFyReqUtzNQjZ5rbnU2E+9a2/SZvm4wBtMmafsUxxAcSUfPMfHJho6ZcBf3KlZDv1yXiSQBeetRzOAVg88ADFdHo6n84taCLwkhRR9tBD2oYDSPCs6QZ77NqZzWCpadgA9IHTX2XJw3xDvvcOxXhgyjG0pWnKuVhoS+VIUepuV2/DCd+NsXpdivDuN/YNI07fVXjxddIkH8fsnyHrOV4UBDq7DmbluroXh+6QHbXLuuwDRe9iaV21sJ064SbyG2SRLKpehKBDZE6PhRNzXlBst/pCqW11QzwC5fjCS87N1L50ruSwVR3VBIZ20hOfcb6B7/CvA+CPnhLgvdMIPAxSmz/MxnjvaRL+GTmmk8TN1ZN4Vgy/YidJRDHU3bMdrzuE38+SyM4IQC+048clo0msC7eGUQvNIulz1MU9gNSgBaECpf8TYJnHS5FlTXFfosHcRS3DCT5YK7VOPTVyQ9C1hpTxET2AxXyKweRKNNVeDExK5ADz92C2/TiptesZTKo9d5S7fsLYhqIzuLL5OPqlhUfuNN344Nc=
-    file:
-      - "hast-util-has-property.js"
-      - "hast-util-has-property.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: Am2D3NNzZyq9pkSvdDD/F0I76Mu4VyZsIJf0nNFj10LqT+831uwb1PiAl5UP7mc7HfBhn4iMwo2KIo7XSwxsLzCN9s3C8LTldbLK3zAwkVPQfNfSwF48QFg7op3sitme0KGDmJFLGMoXFyReqUtzNQjZ5rbnU2E+9a2/SZvm4wBtMmafsUxxAcSUfPMfHJho6ZcBf3KlZDv1yXiSQBeetRzOAVg88ADFdHo6n84taCLwkhRR9tBD2oYDSPCs6QZ77NqZzWCpadgA9IHTX2XJw3xDvvcOxXhgyjG0pWnKuVhoS+VIUepuV2/DCd+NsXpdivDuN/YNI07fVXjxddIkH8fsnyHrOV4UBDq7DmbluroXh+6QHbXLuuwDRe9iaV21sJ064SbyG2SRLKpehKBDZE6PhRNzXlBst/pCqW11QzwC5fjCS87N1L50ruSwVR3VBIZ20hOfcb6B7/CvA+CPnhLgvdMIPAxSmz/MxnjvaRL+GTmmk8TN1ZN4Vgy/YidJRDHU3bMdrzuE38+SyM4IQC+048clo0msC7eGUQvNIulz1MU9gNSgBaECpf8TYJnHS5FlTXFfosHcRS3DCT5YK7VOPTVyQ9C1hpTxET2AxXyKweRKNNVeDExK5ADz92C2/TiptesZTKo9d5S7fsLYhqIzuLL5OPqlhUfuNN344Nc=
+  file:
+    - "hast-util-has-property.js"
+    - "hast-util-has-property.min.js"
+  on:
+    tags: true
+    node: '9.0'
