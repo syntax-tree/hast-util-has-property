@@ -1,4 +1,4 @@
-# hast-util-has-property [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# hast-util-has-property [![Build][build-badge]][build] [![Coverage][coverage-badge]][coverage] [![Downloads][downloads-badge]][downloads] [![Chat][chat-badge]][chat]
 
 Check whether a [HAST node][hast] is an [element][] with a [property][].
 
@@ -70,11 +70,19 @@ repository, organisation, or community you agree to abide by its terms.
 
 [build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-has-property.svg
 
-[build-page]: https://travis-ci.org/syntax-tree/hast-util-has-property
+[build]: https://travis-ci.org/syntax-tree/hast-util-has-property
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-has-property.svg
 
-[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-has-property?branch=master
+[coverage]: https://codecov.io/github/syntax-tree/hast-util-has-property
+
+[downloads-badge]: https://img.shields.io/npm/dm/hast-util-has-property.svg
+
+[downloads]: https://www.npmjs.com/package/hast-util-has-property
+
+[chat-badge]: https://img.shields.io/badge/join%20the%20community-on%20spectrum-7b16ff.svg
+
+[chat]: https://spectrum.chat/unified/rehype
 
 [npm]: https://docs.npmjs.com/cli/install
 
