@@ -1,6 +1,6 @@
 {
   "name": "hast-util-has-property",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a node has a property",
   "license": "MIT",
   "keywords": [
