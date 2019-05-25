@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -9,7 +9,7 @@ deploy:
   api_key:
     secure: Am2D3NNzZyq9pkSvdDD/F0I76Mu4VyZsIJf0nNFj10LqT+831uwb1PiAl5UP7mc7HfBhn4iMwo2KIo7XSwxsLzCN9s3C8LTldbLK3zAwkVPQfNfSwF48QFg7op3sitme0KGDmJFLGMoXFyReqUtzNQjZ5rbnU2E+9a2/SZvm4wBtMmafsUxxAcSUfPMfHJho6ZcBf3KlZDv1yXiSQBeetRzOAVg88ADFdHo6n84taCLwkhRR9tBD2oYDSPCs6QZ77NqZzWCpadgA9IHTX2XJw3xDvvcOxXhgyjG0pWnKuVhoS+VIUepuV2/DCd+NsXpdivDuN/YNI07fVXjxddIkH8fsnyHrOV4UBDq7DmbluroXh+6QHbXLuuwDRe9iaV21sJ064SbyG2SRLKpehKBDZE6PhRNzXlBst/pCqW11QzwC5fjCS87N1L50ruSwVR3VBIZ20hOfcb6B7/CvA+CPnhLgvdMIPAxSmz/MxnjvaRL+GTmmk8TN1ZN4Vgy/YidJRDHU3bMdrzuE38+SyM4IQC+048clo0msC7eGUQvNIulz1MU9gNSgBaECpf8TYJnHS5FlTXFfosHcRS3DCT5YK7VOPTVyQ9C1hpTxET2AxXyKweRKNNVeDExK5ADz92C2/TiptesZTKo9d5S7fsLYhqIzuLL5OPqlhUfuNN344Nc=
   file:
-    - "hast-util-has-property.js"
-    - "hast-util-has-property.min.js"
+    - 'hast-util-has-property.js'
+    - 'hast-util-has-property.min.js'
   on:
     tags: true
