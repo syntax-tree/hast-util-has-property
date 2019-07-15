@@ -66,8 +66,8 @@ Check if `node` is an [*element*][element] that has a `name`
 
 ## Security
 
-`hast-util-has-property` does not change the syntax tree so there are no openings
-for [cross-site scripting (XSS)][xss] attacks.
+`hast-util-has-property` does not change the syntax tree so there are no
+openings for [cross-site scripting (XSS)][xss] attacks.
 
 ## Contribute
 
