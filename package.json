@@ -1,13 +1,18 @@
 {
   "name": "hast-util-has-property",
   "version": "1.0.3",
-  "description": "Check if a node has a property",
+  "description": "hast utility to check if a node has a property",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "element",
-    "property"
+    "property",
+    "check"
   ],
   "repository": "syntax-tree/hast-util-has-property",
   "bugs": "https://github.com/syntax-tree/hast-util-has-property/issues",
