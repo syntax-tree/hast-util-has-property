@@ -118,9 +118,9 @@ abide by its terms.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-has-property.svg
+[build-badge]: https://github.com/syntax-tree/hast-util-has-property/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/syntax-tree/hast-util-has-property
+[build]: https://github.com/syntax-tree/hast-util-has-property/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-has-property.svg
 
