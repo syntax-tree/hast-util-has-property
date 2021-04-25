@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var hasProperty = require('.')
+import test from 'tape'
+import {hasProperty} from './index.js'
 
 test('hasProperty', function (t) {
   t.equal(

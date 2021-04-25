@@ -1,11 +1,7 @@
-'use strict'
-
 var own = {}.hasOwnProperty
 
-module.exports = hasProperty
-
 // Check if `node` has a set `name` property.
-function hasProperty(node, name) {
+export function hasProperty(node, name) {
   var value =
     node &&
     node.type === 'element' &&

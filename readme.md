@@ -13,6 +13,9 @@
 
 ## Install
 
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -22,11 +25,11 @@ npm install hast-util-has-property
 ## Use
 
 ```js
-var has = require('hast-util-has-property')
+import {hasProperty} from 'hast-util-has-property'
 
-has({type: 'text', value: 'alpha'}, 'bravo') // => false
+hasProperty({type: 'text', value: 'alpha'}, 'bravo') // => false
 
-has(
+hasProperty(
   {
     type: 'element',
     tagName: 'div',
@@ -36,7 +39,7 @@ has(
   'className'
 ) // => false
 
-has(
+hasProperty(
   {
     type: 'element',
     tagName: 'div',
@@ -48,6 +51,9 @@ has(
 ```
 
 ## API
+
+This package exports the following identifiers: `hasProperty`.
+There is no default export.
 
 ### `hasProperty(node, name)`
 
