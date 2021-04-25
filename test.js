@@ -39,10 +39,8 @@ test('hasProperty', function (t) {
   )
 
   t.equal(
-    hasProperty({
-      type: 'element',
-      properties: {id: 'delta'}
-    }),
+    // @ts-ignore runtime.
+    hasProperty({type: 'element', properties: {id: 'delta'}}),
     false,
     'should return `false` if without `name`'
   )
