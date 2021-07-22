@@ -39,7 +39,7 @@ test('hasProperty', (t) => {
   )
 
   t.equal(
-    // @ts-ignore runtime.
+    // @ts-expect-error runtime.
     hasProperty({type: 'element', properties: {id: 'delta'}}),
     false,
     'should return `false` if without `name`'
