@@ -1,4 +1,4 @@
-var own = {}.hasOwnProperty
+const own = {}.hasOwnProperty
 
 /**
  * Check if `node` has a set `name` property.
@@ -9,7 +9,7 @@ var own = {}.hasOwnProperty
  */
 export function hasProperty(node, name) {
   /** @type {unknown} */
-  var value =
+  const value =
     name &&
     node &&
     typeof node === 'object' &&

@@ -1,7 +1,7 @@
 import test from 'tape'
 import {hasProperty} from './index.js'
 
-test('hasProperty', function (t) {
+test('hasProperty', (t) => {
   t.equal(
     hasProperty(null, 'alpha'),
     false,
