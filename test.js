@@ -1,32 +1,33 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {hasProperty} from './index.js'
 
-test('hasProperty', (t) => {
-  t.equal(
+test('hasProperty', () => {
+  assert.equal(
     hasProperty(null, 'alpha'),
     false,
     'should return `false` without node'
   )
 
-  t.equal(
+  assert.equal(
     hasProperty({type: 'text', value: 'alpha'}, 'bravo'),
     false,
     'should return `false` without `element`'
   )
 
-  t.equal(
+  assert.equal(
     hasProperty({type: 'element'}, 'charlie'),
     false,
     'should return `false` without properties'
   )
 
-  t.equal(
+  assert.equal(
     hasProperty({type: 'element', properties: {}}, 'toString'),
     false,
     'should return `false` for prototypal properties'
   )
 
-  t.equal(
+  assert.equal(
     hasProperty(
       {
         type: 'element',
@@ -38,14 +39,14 @@ test('hasProperty', (t) => {
     'should return `false` if the property does not exist'
   )
 
-  t.equal(
+  assert.equal(
     // @ts-expect-error runtime.
     hasProperty({type: 'element', properties: {id: 'delta'}}),
     false,
     'should return `false` if without `name`'
   )
 
-  t.equal(
+  assert.equal(
     hasProperty(
       {
         type: 'element',
@@ -56,6 +57,4 @@ test('hasProperty', (t) => {
     true,
     'should return `true` if the property does exist'
   )
-
-  t.end()
 })
