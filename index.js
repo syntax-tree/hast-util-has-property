@@ -1,26 +1,37 @@
+/**
+ * @typedef {import('hast').Root} Root
+ * @typedef {import('hast').Content} Content
+ */
+
+/**
+ * @typedef {Root | Content} Node
+ */
+
 const own = {}.hasOwnProperty
 
 /**
- * Check if `node` has a set `name` property.
+ * Check if `node` has a `field` property.
  *
  * @param {unknown} node
- * @param {string} name
+ * @param {string | null | undefined} field
  * @returns {boolean}
  */
-export function hasProperty(node, name) {
-  /** @type {unknown} */
+export function hasProperty(node, field) {
   const value =
-    name &&
-    node &&
-    typeof node === 'object' &&
-    // @ts-expect-error Looks like a node.
+    field &&
+    isNode(node) &&
     node.type === 'element' &&
-    // @ts-expect-error Looks like an element.
     node.properties &&
-    // @ts-expect-error Looks like an element.
-    own.call(node.properties, name) &&
-    // @ts-expect-error Looks like an element.
-    node.properties[name]
+    own.call(node.properties, field) &&
+    node.properties[field]
 
   return value !== null && value !== undefined && value !== false
+}
+
+/**
+ * @param {unknown} value
+ * @returns {value is Node}
+ */
+function isNode(value) {
+  return Boolean(value && typeof value === 'object' && 'type' in value)
 }
