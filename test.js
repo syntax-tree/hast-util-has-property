@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {hasProperty} from './index.js'
+import * as mod from './index.js'
 
 test('hasProperty', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['hasProperty'],
+    'should expose the public api'
+  )
+
   assert.equal(
     hasProperty(null, 'alpha'),
     false,
