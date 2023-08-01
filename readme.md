@@ -97,12 +97,12 @@ Check if `node`is an element and has a `field` property.
 
 ###### Parameters
 
-*   `node` (`unknown`) — thing to check (typically [`Element`][element])
-*   `name` (`unknown`) - field name to check (typically `string`)
+*   `node` (`Node`) — node to check (typically [`Element`][element])
+*   `name` (`string`) - property name to check
 
 ###### Returns
 
-Whether `node` is an element that has a `field` property (`boolean`).
+Whether `node` is an element that has a `name` property (`boolean`).
 
 ## Types
 
