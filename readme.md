@@ -47,14 +47,14 @@ npm install hast-util-has-property
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {hasProperty} from 'https://esm.sh/hast-util-has-property@2'
+import {hasProperty} from 'https://esm.sh/hast-util-has-property@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {hasProperty} from 'https://esm.sh/hast-util-has-property@2?bundle'
+  import {hasProperty} from 'https://esm.sh/hast-util-has-property@3?bundle'
 </script>
 ```
 
